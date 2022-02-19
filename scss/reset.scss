@@ -1,4 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@font-face {
+    font-family: 'Graphik LC';
+    font-weight: 400;
+    src: url("../fonts/GraphikLCG-Regular.woff2") format("woff2"), url("../fonts/GraphikLCG-Regular.eot") format("embedded-opentype"), url("../fonts/GraphikLCG-Regular.woff") format("woff"), url("../fonts/GraphikLCG-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: 'Graphik LC';
+    font-weight: 500;
+    src: url("../fonts/GraphikLCG-Medium.woff2") format("woff2"), url("../fonts/GraphikLCG-Medium.eot") format("embedded-opentype"), url("../fonts/GraphikLCG-Medium.woff") format("woff"), url("../fonts/GraphikLCG-Medium.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: 'Graphik LC';
+    font-weight: 600;
+    src: url("../fonts/GraphikLCG-Semibold.woff2") format("woff2"), url("../fonts/GraphikLCG-Semibold.eot") format("embedded-opentype"), url("../fonts/GraphikLCG-Semibold.woff") format("woff"), url("../fonts/GraphikLCG-Semibold.ttf") format("truetype");
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -155,4 +173,8 @@ li {
 
 i {
     line-height: 100%;
+}
+
+.graphic-lc {
+    font-family: 'Graphik LC', sans-serif;
 }

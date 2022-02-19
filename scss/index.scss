@@ -94,6 +94,28 @@
     }
 }
 
+.catalog {
+    padding: 60px 0;
+    &__top {
+        display: flex;
+        justify-content: center;
+    }
+    &__title {
+        position: relative;
+        svg {
+            position: absolute;
+            right: -30px;
+            top: -15px;
+        }
+    }
+    &__desc {
+        margin-top: 17px;
+        text-align: center;
+        font-size: 20px;
+        line-height: 142%;
+    }
+}
+
 @media screen and (max-width: 992px) {
     .main {
         padding: 0 0 36px;
