@@ -1066,6 +1066,12 @@ i {
   .about__title {
     max-width: 550px;
   }
+  .about__title2 {
+    font-size: 26px;
+  }
+  .about__desc p {
+    font-size: 16px;
+  }
 }
 @media screen and (max-width: 500px) {
   .about__left {
@@ -1617,5 +1623,10 @@ i {
   .container {
     width: 100%;
     padding: 0 20px;
+  }
+}
+@media screen and (max-width: 369px) {
+  .container {
+    padding: 0 10px;
   }
 }
