@@ -1,152 +1,94 @@
-.main {
-  padding: 55px 0 110px;
-  background-color: #f3f3f5;
-  position: relative; }
-  .main--remont {
-    background: #191D2D;
-    color: #FFFFFF; }
-    .main--remont .main__bg {
-      padding-left: calc(100% - 650px - (100% - 1224px) / 2); }
-      @media screen and (max-width: 1300px) {
-        .main--remont .main__bg {
-          padding-left: calc(100% - 650px - (100% - 1340px) / 2); } }
-      @media screen and (max-width: 992px) {
-        .main--remont .main__bg {
-          padding-left: 0; }
-          .main--remont .main__bg:before {
-            display: none; } }
-  .main__bg {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    right: 0;
-    top: 0;
-    text-align: right; }
-    .main__bg img {
-      height: 100%;
-      width: auto;
-      margin-left: auto; }
-    .main__bg-mob {
-      display: none; }
-    .main__bg-dekstop {
-      position: absolute;
-      right: 0;
-      top: 0; }
-  .main__inner {
-    max-width: 630px;
-    position: relative;
-    z-index: 2; }
-  .main__address {
-    font-weight: 500;
-    font-size: 19.1697px;
-    line-height: 150%;
-    display: flex;
-    align-items: center; }
-    .main__address svg {
-      margin-right: 11px; }
-  .main__title {
-    margin-top: 24px; }
-  .main__items {
-    margin-top: 15px; }
-  .main__item {
-    margin-top: 9px;
-    padding-left: 22px;
-    font-weight: 500;
-    font-size: 17.4778px;
-    line-height: 150%;
-    position: relative; }
-    .main__item:before {
-      content: '';
-      position: absolute;
-      z-index: 1;
-      background: #0345FF;
-      width: 7px;
-      height: 7px;
-      border-radius: 50%;
-      left: 0;
-      top: 9px; }
-  .main__btn {
-    margin-top: 54px;
-    width: 291px;
-    height: 62px;
-    border-radius: 66.1169px;
-    font-weight: 500;
-    font-size: 18.5127px; }
-  .main__arrow {
-    position: absolute;
-    bottom: 21px;
-    left: 330px; }
+/*
+Error: Undefined mixin 'scroll'.
+        on line 188 of D:\work\freelance\remobile\scss\index.scss, in `scroll'
+        from line 188 of D:\work\freelance\remobile\scss\index.scss
 
-.catalog {
-  padding: 60px 0; }
-  .catalog__top {
-    display: flex;
-    justify-content: center; }
-  .catalog__title {
-    position: relative; }
-    .catalog__title svg {
-      position: absolute;
-      right: -30px;
-      top: -15px; }
-  .catalog__desc {
-    margin-top: 17px;
-    text-align: center;
-    font-size: 20px;
-    line-height: 142%; }
+183:         }
+184:         &__items {
+185:             display: flex;
+186:             gap: unset;
+187:             overflow-x: auto;
+188:             @include scroll();
+189:             padding-bottom: 10px;
+190:         }
+191:         &__item {
+192:             width: 270px;
+193:             margin-right: 18px;
 
-@media screen and (max-width: 992px) {
-  .main {
-    padding: 0 0 36px; }
-    .main--remont .main__inner {
-      margin-top: 25px; }
-    .main__bg {
-      position: relative;
-      left: 0;
-      top: 0; }
-      .main__bg img {
-        width: 100%;
-        height: auto; }
-      .main__bg:before {
-        content: '';
-        position: absolute;
-        z-index: 1;
-        background: linear-gradient(180deg, rgba(244, 244, 244, 0) 0%, #F2F2F2 100%);
-        width: 100%;
-        height: 100%; }
-      .main__bg-dekstop {
-        display: none; }
-      .main__bg-mob {
-        display: block; }
-    .main__inner {
-      margin-top: -25px; }
-    .main__address {
-      font-size: 14.5713px; }
-      .main__address svg {
-        margin-right: 8px; }
-    .main__title {
-      margin-top: 10px; }
-    .main__items {
-      margin-top: 13px; }
-    .main__item {
-      margin-top: 7px;
-      padding-left: 18px;
-      font-size: 14.3789px; }
-      .main__item:before {
-        width: 5.76px;
-        height: 5.76px; }
-    .main__btn {
-      margin-top: 34px;
-      width: 335px;
-      height: 56px; } }
-    @media screen and (max-width: 992px) and (max-width: 550px) {
-      .main__btn {
-        width: 100%; } }
-@media screen and (max-width: 992px) {
-    .main__arrow {
-      bottom: 80px;
-      left: 210px;
-      transform: rotate(-14deg); }
-      .main__arrow svg {
-        width: 200px; } }
-
-/*# sourceMappingURL=index.css.map */
+Backtrace:
+D:\work\freelance\remobile\scss\index.scss:188:in `scroll'
+D:\work\freelance\remobile\scss\index.scss:188
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:352:in `block in visit_mixin'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:98:in `block in with_mixin'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:98:in `with_mixin'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:350:in `visit_mixin'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `with_base'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `block (2 levels) in visit_rule'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `map'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `block in visit_rule'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:442:in `visit_rule'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `with_base'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `block (2 levels) in visit_rule'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `map'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `block in visit_rule'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:442:in `visit_rule'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `with_base'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `map'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:528:in `visit_media'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `with_base'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `map'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:161:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:10:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/root_node.rb:36:in `css_tree'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:307:in `render_with_sourcemap'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:391:in `run'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:63:in `process_result'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:52:in `parse'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:19:in `parse!'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/bin/sass:13:in `<top (required)>'
+C:/Program Files (x86)/Koala/bin/sass:22:in `load'
+C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Undefined mixin 'scroll'.\A         on line 188 of D:\work\freelance\remobile\scss\index.scss, in `scroll'\A         from line 188 of D:\work\freelance\remobile\scss\index.scss\A \A 183:         }\A 184:         &__items {\A 185:             display: flex;\A 186:             gap: unset;\A 187:             overflow-x: auto;\A 188:             @include scroll();\A 189:             padding-bottom: 10px;\A 190:         }\A 191:         &__item {\A 192:             width: 270px;\A 193:             margin-right: 18px;"; }
