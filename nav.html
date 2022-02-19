@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/nice-select.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Меню</title>
+</head>
+<style>
+    .wrapper {
+        padding: 50px;
+        /* background: #000; */
+    }
+    
+    .wrapper a {
+        display: block;
+        margin-bottom: 20px;
+        font-size: 28px;
+        font-weight: bold;
+    }
+    
+    .wrapper button {
+        margin-bottom: 20px;
+        width: 250px;
+        height: 45px;
+        font-size: 18px;
+        font-weight: bold;
+    }
+</style>
+
+<body>
+
+    <div class="wrapper">
+        <a href="index.html">Главная страница</a>
+        <a href="remont-page.html">Страница ремонта</a>
+        <a href="about.html">О сервисе</a>
+        <a href="news.html">Акции и новости</a>
+        <a href="news.html">Акции и новости 2</a>
+        <a href="contacts.html">Контакты</a>
+        <a href="feedback.html">Отзывы</a>
+
+        <button type='button' class='btn btn-info btn-lg' data-toggle='modal' data-target='#modal1'>Open Modal</button>
+        <button type='button' class='btn btn-info btn-lg' data-toggle='modal' data-target='#modal2'>Open Modal 2</button>
+    </div>
+
+    <div id='modal1' class='modal fade' role='dialog'>
+        <div class='modal-dialog'>
+            <button type='button' class='modal__close' data-dismiss='modal'>
+                <img src="img/close.svg" alt="">
+            </button>
+            <form class="ask__form">
+                <div class="ask__form-title">Есть вопросы? <br> Оставьте заявку и мы проконсультируем вас</div>
+                <div class="ask__form-desc">Менеджер свяжется с вами в <br> ближайшее время</div>
+                <fieldset class='ask__form-group form-group'>
+                    <input type='text' placeholder="+7 " />
+                </fieldset>
+                <fieldset class='ask__form-group form-group'>
+                    <input type='text' placeholder="Имя" />
+                </fieldset>
+                <fieldset class='ask__form-group form-group'>
+                    <input type='text' placeholder="Email" />
+                </fieldset>
+                <button class="ask__form-btn btn btn-blue">Отправить</button>
+                <div class="modal__check">
+                    <input type='checkbox' class='checkbox' id='c' />
+                    <label for='c'>Оставляя заявку вы соглашаетесь на обработку ваших <a href="">персональных данных</a></label>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div id='modal2' class='modal fade' role='dialog'>
+        <div class='modal-dialog'>
+            <button type='button' class='modal__close' data-dismiss='modal'>
+                <img src="img/close.svg" alt="">
+            </button>
+            <div class="modal__thanks">
+                <div class="modal__thanks-icon">
+                    <svg width="25" height="23" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M24.2077 4.92519L13.9119 21.1774C13.1495 22.3811 11.5549 22.7389 10.3504 21.9766L1.96032 16.6614C0.756342 15.8989 0.398486 14.3041 1.16118 13.1001C1.92402 11.8959 3.51845 11.5381 4.72218 12.3006L10.9329 16.2349L19.8469 2.16296C20.6097 0.958715 22.2044 0.601645 23.4081 1.36382C24.612 2.12656 24.9697 3.72074 24.2077 4.92519Z" fill="#4CC539"/>
+                        </svg>
+                </div>
+                <div class="modal__thanks-title">Спасибо за заявку</div>
+                <div class="modal__thanks-desc">Наш менеджер свяжется с вами в ближайшщее время</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/swiper.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+    <script src="js/index.js"></script>
+
+</body>
+
+</html>

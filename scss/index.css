@@ -1,23 +1,23 @@
 /*
 Error: Undefined mixin 'scroll'.
-        on line 188 of D:\work\freelance\remobile\scss\index.scss, in `scroll'
-        from line 188 of D:\work\freelance\remobile\scss\index.scss
+        on line 495 of D:\work\freelance\remobile\scss\index.scss, in `scroll'
+        from line 495 of D:\work\freelance\remobile\scss\index.scss
 
-183:         }
-184:         &__items {
-185:             display: flex;
-186:             gap: unset;
-187:             overflow-x: auto;
-188:             @include scroll();
-189:             padding-bottom: 10px;
-190:         }
-191:         &__item {
-192:             width: 270px;
-193:             margin-right: 18px;
+490:         }
+491:         &__items {
+492:             display: flex;
+493:             gap: unset;
+494:             overflow-x: auto;
+495:             @include scroll();
+496:             padding-bottom: 10px;
+497:         }
+498:         &__item {
+499:             width: 270px;
+500:             margin-right: 18px;
 
 Backtrace:
-D:\work\freelance\remobile\scss\index.scss:188:in `scroll'
-D:\work\freelance\remobile\scss\index.scss:188
+D:\work\freelance\remobile\scss\index.scss:495:in `scroll'
+D:\work\freelance\remobile\scss\index.scss:495
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:352:in `block in visit_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:98:in `block in with_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
@@ -91,4 +91,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'scroll'.\A         on line 188 of D:\work\freelance\remobile\scss\index.scss, in `scroll'\A         from line 188 of D:\work\freelance\remobile\scss\index.scss\A \A 183:         }\A 184:         &__items {\A 185:             display: flex;\A 186:             gap: unset;\A 187:             overflow-x: auto;\A 188:             @include scroll();\A 189:             padding-bottom: 10px;\A 190:         }\A 191:         &__item {\A 192:             width: 270px;\A 193:             margin-right: 18px;"; }
+  content: "Error: Undefined mixin 'scroll'.\A         on line 495 of D:\work\freelance\remobile\scss\index.scss, in `scroll'\A         from line 495 of D:\work\freelance\remobile\scss\index.scss\A \A 490:         }\A 491:         &__items {\A 492:             display: flex;\A 493:             gap: unset;\A 494:             overflow-x: auto;\A 495:             @include scroll();\A 496:             padding-bottom: 10px;\A 497:         }\A 498:         &__item {\A 499:             width: 270px;\A 500:             margin-right: 18px;"; }

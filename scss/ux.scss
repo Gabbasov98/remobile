@@ -201,6 +201,189 @@
     }
 }
 
+.feedback-card {
+    background: #FFFFFF;
+    box-shadow: 0px 12px 64px rgba(0, 0, 0, 0.08);
+    border-radius: 12px;
+    height: 100%;
+    padding: 36px 31px;
+    min-height: 320px;
+    &__stars {
+        display: flex;
+        align-items: center;
+    }
+    &__star {
+        &:not(:last-child) {
+            margin-right: 3.3px;
+        }
+    }
+    &__title {
+        font-weight: 500;
+        font-size: 19.3248px;
+        line-height: 110%;
+        color: #050515;
+        margin-top: 36px;
+    }
+    &__desc {
+        font-size: 16.426px;
+        margin-top: 17px;
+        line-height: 144%;
+        color: #08061A;
+    }
+}
+
+.contact-card {
+    margin-top: 35px;
+    background: #EDF4FD;
+    border-radius: 30px;
+    padding: 58px 64px 100px;
+    text-align: center;
+    &__title {
+        margin-top: 7px;
+    }
+    &__desc {
+        font-size: 18px;
+        line-height: 131%;
+        margin-top: 28px;
+    }
+    &__links {
+        margin-top: 49px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 20px;
+    }
+    &__link {
+        border-radius: 41.4743px;
+        height: 48.73px;
+        font-weight: 600;
+        font-size: 15.5529px;
+        color: #fff;
+        svg {
+            margin-right: 10px;
+        }
+        &:hover {
+            color: #fff;
+            opacity: 0.9;
+            box-shadow: none;
+        }
+        &--whatsapp {
+            background: #3AD556;
+            box-shadow: 0px 4px 24px rgba(58, 212, 86, 0.45);
+        }
+        &--viber {
+            background: #7326B9;
+            box-shadow: 0px 4px 34px rgba(115, 38, 185, 0.35);
+        }
+        &--telegram {
+            background: #2A9EF2;
+            box-shadow: 0px 4px 24px rgba(42, 158, 242, 0.45);
+        }
+        &--vk {
+            background: #3C76CC;
+            box-shadow: 0px 4px 32px rgba(60, 118, 204, 0.45);
+        }
+    }
+    @media screen and (max-width: 1200px) {
+        padding: 40px 13px 77px;
+        &__desc {
+            font-size: 14.4666px;
+            margin-top: 20px;
+        }
+        &__links {
+            grid-template-columns: 1fr 1fr;
+            max-width: 520px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+    @media screen and (max-width: 600px) {
+        &__links {
+            gap: 16px;
+            grid-template-columns: 1fr;
+            max-width: 250px;
+        }
+    }
+}
+
+.news-card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    &__img {
+        display: block;
+        overflow: hidden;
+        height: 182px;
+        img {
+            width: 100%;
+            min-height: 100%;
+        }
+    }
+    &__title {
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 117%;
+        letter-spacing: -0.02em;
+        color: #000000;
+        display: block;
+        margin-top: 17px;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        &:hover {
+            color: #0345FF;
+        }
+    }
+    &__desc {
+        font-size: 16px;
+        line-height: 136%;
+        letter-spacing: -0.02em;
+        color: #5B5E68;
+        margin: 13px 0;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+    }
+    &__hint {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 136%;
+        letter-spacing: -0.02em;
+        color: #0345FF;
+        margin-top: auto;
+    }
+    @media screen and (max-width: 1200px) {
+        &__img {
+            height: 210px;
+        }
+    }
+    @media screen and (max-width: 992px) {
+        &__img {
+            height: 170px;
+        }
+        &__title {
+            font-size: 19.7708px;
+            margin-top: 15px;
+        }
+        &__desc {
+            font-size: 14.3787px;
+            margin: 11px 0;
+        }
+        &__hint {
+            font-size: 14.3787px;
+        }
+    }
+    @media screen and (max-width: 768px) {
+        &__img {
+            height: unset;
+            img {
+                height: auto;
+            }
+        }
+    }
+}
+
 @media screen and (max-width: 1200px) {}
 
 @media screen and (max-width: 992px) {}
