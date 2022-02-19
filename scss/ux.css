@@ -1,0 +1,56 @@
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border-radius: 0; }
+
+.btn-blue {
+  background: #0345FF;
+  color: #FFFFFF; }
+  .btn-blue:hover {
+    background: #003EEF;
+    color: #FFFFFF; }
+
+.btn-blue-outline {
+  border: 2px solid #E9EAED;
+  color: #0345FF; }
+  .btn-blue-outline:hover {
+    background: #F8F8F8;
+    border: 2px solid #E0E3ED;
+    color: #0345FF; }
+
+.display1 {
+  font-weight: 800;
+  font-size: 47.64px;
+  line-height: 106%; }
+  @media screen and (max-width: 992px) {
+    .display1 {
+      font-size: 25.4921px; } }
+
+.breadcrumbs {
+  color: #242A3D;
+  display: flex;
+  align-items: center; }
+  .breadcrumbs--white {
+    color: #fff; }
+    .breadcrumbs--white path {
+      fill: #fff; }
+  .breadcrumbs__item {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    line-height: 150%;
+    position: relative; }
+    .breadcrumbs__item:not(:first-child):before {
+      content: '/';
+      margin: 0 14px; }
+    .breadcrumbs__item:hover path {
+      fill: #8A8E9B; }
+    .breadcrumbs__item svg {
+      margin-top: -3px; }
+  @media screen and (max-width: 992px) {
+    .breadcrumbs {
+      display: none; } }
+
+/*# sourceMappingURL=ux.css.map */
