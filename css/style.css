@@ -191,6 +191,17 @@ i {
   }
 }
 
+.display2 {
+  font-weight: 800;
+  font-size: 42px;
+  line-height: 106%;
+}
+@media screen and (max-width: 992px) {
+  .display2 {
+    font-size: 25.4921px;
+  }
+}
+
 .breadcrumbs {
   color: #242A3D;
   display: flex;
@@ -626,6 +637,11 @@ i {
 }
 .main__bg-mob {
   display: none;
+}
+.main__bg-dekstop {
+  position: absolute;
+  right: 0;
+  top: 0;
 }
 .main__inner {
   max-width: 630px;

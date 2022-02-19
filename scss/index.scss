@@ -33,6 +33,11 @@
         &-mob {
             display: none;
         }
+        &-dekstop {
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
     }
     &__inner {
         max-width: 630px;

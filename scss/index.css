@@ -28,6 +28,10 @@
       margin-left: auto; }
     .main__bg-mob {
       display: none; }
+    .main__bg-dekstop {
+      position: absolute;
+      right: 0;
+      top: 0; }
   .main__inner {
     max-width: 630px;
     position: relative;
