@@ -341,6 +341,9 @@
 
 .feedback {
     padding: 80px 0 160px;
+    &--bg {
+        background: #F7F8FD;
+    }
     &__stars {
         display: flex;
         align-items: center;

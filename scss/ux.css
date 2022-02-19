@@ -12,6 +12,16 @@
     background: #003EEF;
     color: #FFFFFF; }
 
+.btn-blue-outline {
+  border: 1px solid #0345FF;
+  color: #0345FF; }
+  .btn-blue-outline:hover {
+    background: #0345FF;
+    color: #fff; }
+    .btn-blue-outline:hover path {
+      fill: #fff;
+      stroke: #fff; }
+
 .btn-grey-outline {
   border: 2px solid #E9EAED;
   color: #0345FF; }
@@ -23,7 +33,7 @@
 .display1 {
   font-weight: 800;
   font-size: 47.64px;
-  line-height: 106%; }
+  line-height: 126%; }
   @media screen and (max-width: 992px) {
     .display1 {
       font-size: 25.4921px; } }
@@ -32,7 +42,7 @@
   font-weight: 600;
   font-family: 'Graphik LC', sans-serif;
   font-size: 42px;
-  line-height: 106%; }
+  line-height: 126%; }
   @media screen and (max-width: 992px) {
     .display2 {
       font-size: 25.4921px; } }
@@ -229,7 +239,9 @@
     .contact-card__links {
       gap: 16px;
       grid-template-columns: 1fr;
-      max-width: 250px; } }
+      max-width: 250px; }
+    .contact-card__title br {
+      display: none; } }
 
 .news-card {
   height: 100%;

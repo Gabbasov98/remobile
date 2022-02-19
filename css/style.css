@@ -189,6 +189,19 @@ i {
   color: #FFFFFF;
 }
 
+.btn-blue-outline {
+  border: 1px solid #0345FF;
+  color: #0345FF;
+}
+.btn-blue-outline:hover {
+  background: #0345FF;
+  color: #fff;
+}
+.btn-blue-outline:hover path {
+  fill: #fff;
+  stroke: #fff;
+}
+
 .btn-grey-outline {
   border: 2px solid #E9EAED;
   color: #0345FF;
@@ -202,7 +215,7 @@ i {
 .display1 {
   font-weight: 800;
   font-size: 47.64px;
-  line-height: 106%;
+  line-height: 126%;
 }
 @media screen and (max-width: 992px) {
   .display1 {
@@ -214,7 +227,7 @@ i {
   font-weight: 600;
   font-family: 'Graphik LC', sans-serif;
   font-size: 42px;
-  line-height: 106%;
+  line-height: 126%;
 }
 @media screen and (max-width: 992px) {
   .display2 {
@@ -464,6 +477,9 @@ i {
     gap: 16px;
     grid-template-columns: 1fr;
     max-width: 250px;
+  }
+  .contact-card__title br {
+    display: none;
   }
 }
 
@@ -1259,6 +1275,9 @@ i {
 
 .feedback {
   padding: 80px 0 160px;
+}
+.feedback--bg {
+  background: #F7F8FD;
 }
 .feedback__stars {
   display: flex;
@@ -2333,6 +2352,510 @@ i {
 @media screen and (max-width: 768px) {
   .modal-dialog {
     padding: 33px;
+  }
+}
+.repair {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.repair__inner {
+  display: flex;
+}
+.repair__left {
+  width: 643px;
+  padding-right: 56px;
+  flex-shrink: 0;
+}
+.repair__right {
+  width: calc(100% - 643px);
+  flex-shrink: 0;
+}
+.repair__title span {
+  background: #D2E4FF;
+  border-radius: 14px;
+  padding: 10px;
+  margin-left: -10px;
+}
+.repair__desc {
+  margin-top: 20px;
+}
+.repair__text {
+  font-size: 18px;
+  line-height: 142%;
+  color: #1C162B;
+}
+.repair__text:not(:last-child) {
+  margin-bottom: 20px;
+}
+.repair__text span {
+  font-weight: 600;
+}
+.repair__img {
+  padding-top: 20px;
+  position: relative;
+}
+.repair__img:before {
+  content: '';
+  position: absolute;
+  z-index: 1;
+  background: #0345FF;
+  opacity: 0.2;
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  bottom: 0;
+  transform: translate(-20px, 20px);
+}
+.repair__img img {
+  width: 100%;
+  position: relative;
+  z-index: 2;
+}
+.repair__items {
+  margin-top: 45px;
+}
+.repair__items-title {
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 142%;
+}
+.repair__item {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1050px;
+}
+.repair__btn {
+  margin: 28px 15px 0 0;
+  width: 157.59px;
+  height: 49.41px;
+  border-radius: 68.1105px;
+  font-size: 21.368px;
+  line-height: 142%;
+}
+
+.services {
+  padding-bottom: 115px;
+}
+.services__title {
+  font-weight: 600;
+  font-size: 33px;
+}
+.services__items {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 21px;
+  margin-top: 33px;
+}
+.services__card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.services__card-img {
+  width: 284px;
+  height: 149px;
+}
+.services__card-img img {
+  width: 100%;
+  height: 100%;
+}
+.services__card-title {
+  font-weight: 600;
+  font-size: 21px;
+  line-height: 106%;
+  margin-top: 25px;
+}
+.services__card-text {
+  font-size: 15px;
+  line-height: 141%;
+  margin: 15px 0;
+}
+.services__card-btn {
+  font-size: 15px;
+  line-height: 141%;
+  box-sizing: border-box;
+  border-radius: 50px;
+  width: 147px;
+  height: 40px;
+  margin-top: auto;
+  flex-shrink: 0;
+}
+.services__card-btn svg {
+  margin-left: 11px;
+}
+
+.price-list {
+  padding-bottom: 40px;
+  border-radius: 19px;
+}
+.price-list__inner {
+  background: #F7F8FD;
+  padding: 45px;
+  position: relative;
+  border-radius: 19px;
+}
+.price-list__arrow {
+  position: absolute;
+  left: 307px;
+  top: -22px;
+}
+.price-list__title {
+  font-weight: 600;
+  font-size: 33px;
+  color: #000000;
+}
+.price-list__text {
+  max-width: 686px;
+  font-size: 15px;
+  line-height: 141%;
+  margin-top: 10px;
+}
+.price-list__items {
+  margin-top: 40px;
+}
+.price-list__item {
+  display: flex;
+  align-items: center;
+  background: #FFFFFF;
+  box-shadow: 0px 2px 1px rgba(7, 7, 7, 0.02);
+  border-radius: 7px;
+  padding: 12px 32px 13px 26px;
+}
+.price-list__item:not(:last-child) {
+  margin-bottom: 6px;
+}
+.price-list__item-text {
+  width: calc(100% - 578px);
+  flex-grow: 1;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 106%;
+}
+.price-list__item-time {
+  max-width: 205px;
+  flex-grow: 1;
+  font-size: 16px;
+  line-height: 106%;
+}
+.price-list__item-price {
+  max-width: 255px;
+  flex-grow: 1;
+  font-size: 16px;
+  line-height: 106%;
+}
+.price-list__item-btn {
+  width: 118px;
+  height: 34px;
+  background: #0345FF;
+  border-radius: 50px;
+  font-size: 14px;
+  line-height: 19px;
+  flex-shrink: 0;
+}
+.price-list .contact-card {
+  background-color: transparent;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding: 38px 25px 60px;
+  margin-top: 0;
+}
+
+.benefits {
+  padding: 40px 0 120px;
+}
+.benefits__title {
+  text-align: center;
+}
+.benefits__items {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(4, calc(25% - (54px / 4)));
+  gap: 18px;
+}
+.benefits__card {
+  background: #FFFFFF;
+  border-radius: 12px;
+  min-height: 385px;
+  padding: 50px 34px;
+  box-shadow: 0px 12px 64px rgba(0, 0, 0, 0.08);
+}
+.benefits__card-img {
+  width: 93px;
+  height: 93px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #0345FF;
+}
+.benefits__card-title {
+  font-weight: 600;
+  font-size: 21px;
+  line-height: 106%;
+  margin-top: 30px;
+}
+.benefits__card-text {
+  font-size: 15px;
+  line-height: 141%;
+  margin-top: 10px;
+}
+
+.advantage {
+  padding: 60px 0 86px;
+}
+.advantage__left {
+  width: 608px;
+  padding-right: 64px;
+}
+.advantage__right {
+  width: calc(100% - 608px);
+}
+.advantage__item {
+  display: flex;
+}
+.advantage__desc {
+  font-weight: 500;
+  font-size: 17.8717px;
+  line-height: 126%;
+  margin-bottom: 20px;
+  color: #0345FF;
+  display: block;
+}
+.advantage__item:not(:last-child) {
+  margin-bottom: 90px;
+}
+.advantage__item-left {
+  width: 561px;
+}
+.advantage__item-right {
+  width: calc(100% - 561px);
+}
+.advantage__item-title span {
+  background: #D2E4FF;
+  padding: 10px;
+  margin-left: -10px;
+  border-radius: 14px;
+}
+.advantage__item-desc {
+  display: flex;
+}
+.advantage__item-desc:not(:last-child) {
+  margin-bottom: 31px;
+}
+.advantage__item-desc svg {
+  flex-shrink: 0;
+}
+.advantage__item-text {
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 136%;
+  margin-left: 18px;
+}
+.advantage__item-text span {
+  font-weight: 600;
+}
+
+@media screen and (max-width: 1300px) {
+  .services__items {
+    grid-template-columns: 1fr 1fr;
+  }
+  .services__card-img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .price-list__item-price {
+    max-width: 200px;
+  }
+
+  .repair__left, .repair__right {
+    width: 49%;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .repair__inner {
+    display: block;
+  }
+  .repair__left {
+    width: 100%;
+    padding-right: 0;
+  }
+  .repair__right {
+    width: 100%;
+    margin-top: 40px;
+  }
+  .repair__img {
+    padding-top: 0;
+  }
+
+  .benefits__items {
+    overflow-x: auto;
+    display: flex;
+    gap: unset;
+    padding-bottom: 10px;
+  }
+  .benefits__items::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  .benefits__items::-webkit-scrollbar-track {
+    background: #7786A5;
+  }
+  .benefits__items::-webkit-scrollbar-thumb {
+    background: #2551AF;
+    border-radius: 20px;
+  }
+  .benefits__card {
+    width: 220px;
+    padding: 38px 25px;
+    margin-right: 13px;
+    min-height: 285px;
+    flex-shrink: 0;
+  }
+  .benefits__card-img {
+    width: 70.9px;
+    height: 70.9px;
+  }
+  .benefits__card-img img {
+    width: 25px;
+  }
+  .benefits__card-title {
+    font-size: 16.0092px;
+    margin-top: 23px;
+  }
+  .benefits__card-text {
+    font-size: 11.4351px;
+    margin-top: 8px;
+  }
+
+  .advantage__item {
+    display: block;
+  }
+}
+@media screen and (max-width: 992px) {
+  .repair {
+    padding-top: 45px;
+    padding-bottom: 45px;
+  }
+  .repair__title span {
+    padding: 5px;
+    margin-left: -5px;
+  }
+  .repair__text {
+    font-size: 16px;
+  }
+  .repair__items-title {
+    margin-bottom: 7px;
+  }
+  .repair__btn {
+    font-size: 13.6947px;
+    width: 101px;
+    height: 31.67px;
+    margin: 18px 10px 0 0;
+  }
+
+  .services {
+    padding-bottom: 45px;
+  }
+  .services__title {
+    font-size: 26px;
+  }
+  .services__items {
+    grid-template-columns: 1fr;
+    margin-top: 10px;
+    gap: 38px 0;
+  }
+  .services__card-text {
+    margin: 15px 0 25px;
+  }
+  .services__card-btn {
+    width: 155.33px;
+    height: 42.27px;
+  }
+
+  .price-list {
+    background: #F7F8FD;
+    padding: 50px 0;
+  }
+  .price-list__inner {
+    padding: 0;
+  }
+  .price-list__title {
+    font-size: 28px;
+    line-height: 126%;
+  }
+  .price-list__items {
+    margin-top: 25px;
+  }
+  .price-list__item {
+    flex-wrap: wrap;
+    width: calc(100% + 32px);
+    margin-left: -16px;
+    padding: 12px 15px;
+    border-radius: 5.08004px;
+  }
+}
+@media screen and (max-width: 992px) and (max-width: 369px) {
+  .price-list__item {
+    width: calc(100% + 12px);
+    margin-left: -6px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .price-list__item:not(:last-child) {
+    margin-bottom: 4px;
+  }
+  .price-list__item-text {
+    width: calc(100% - 100px);
+    font-size: 12px;
+  }
+  .price-list__item-btn {
+    width: 94px;
+    height: 24px;
+    order: 2;
+    font-size: 12px;
+  }
+  .price-list__item-time {
+    order: 3;
+    font-size: 12px;
+  }
+  .price-list__item-price {
+    order: 4;
+    font-size: 11px;
+  }
+  .price-list .contact-card {
+    padding: 40px 5px;
+  }
+
+  .advantage__desc {
+    font-size: 15px;
+  }
+  .advantage__item:not(:last-child) {
+    margin-bottom: 70px;
+  }
+  .advantage__item-title span {
+    padding: 5px;
+    margin-left: -5px;
+  }
+  .advantage__item-left {
+    display: none;
+  }
+  .advantage__item-right {
+    width: 100%;
+  }
+  .advantage__item-title {
+    margin-bottom: 48px;
+  }
+  .advantage__item-desc:not(:last-child) {
+    margin-bottom: 20px;
+  }
+  .advantage__item-desc svg {
+    width: 21px;
+    height: 21px;
+  }
+  .advantage__item-text {
+    font-size: 14px;
   }
 }
 .wrapper {
