@@ -50,6 +50,9 @@
             left: 0;
             bottom: 0;
             transform: translate(-20px, 20px);
+            @media screen and (max-width: 992px) {
+                transform: translate(-10px, 10px);
+            }
         }
         img {
             width: 100%;
@@ -139,6 +142,14 @@
         padding: 45px;
         position: relative;
         border-radius: 19px;
+    }
+    &__tie {
+        position: absolute;
+        top: -2px;
+        left: 10px;
+        @media screen and (max-width: 992px) {
+            display: none;
+        }
     }
     &__arrow {
         position: absolute;
@@ -352,12 +363,16 @@
         }
     }
     .benefits {
+        .container {
+            padding-right: 0;
+        }
         &__items {
             overflow-x: auto;
             @include scroll();
             display: flex;
             gap: unset;
-            padding-bottom: 10px;
+            padding: 40px 0 10px;
+            margin-top: 0;
         }
         &__card {
             width: 220px;

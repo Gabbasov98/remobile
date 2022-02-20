@@ -9,11 +9,11 @@ Error: Undefined mixin 'scroll'.
 496:             gap: unset;
 497:             overflow-x: auto;
 498:             @include scroll();
-499:             padding-bottom: 10px;
-500:         }
-501:         &__item {
-502:             width: 270px;
-503:             margin-right: 18px;
+499:             margin-top: 0;
+500:             padding: 43px 0 10px;
+501:         }
+502:         &__item {
+503:             width: 270px;
 
 Backtrace:
 D:\work\freelance\remobile\scss\index.scss:498:in `scroll'
@@ -91,4 +91,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'scroll'.\A         on line 498 of D:\work\freelance\remobile\scss\index.scss, in `scroll'\A         from line 498 of D:\work\freelance\remobile\scss\index.scss\A \A 493:         }\A 494:         &__items {\A 495:             display: flex;\A 496:             gap: unset;\A 497:             overflow-x: auto;\A 498:             @include scroll();\A 499:             padding-bottom: 10px;\A 500:         }\A 501:         &__item {\A 502:             width: 270px;\A 503:             margin-right: 18px;"; }
+  content: "Error: Undefined mixin 'scroll'.\A         on line 498 of D:\work\freelance\remobile\scss\index.scss, in `scroll'\A         from line 498 of D:\work\freelance\remobile\scss\index.scss\A \A 493:         }\A 494:         &__items {\A 495:             display: flex;\A 496:             gap: unset;\A 497:             overflow-x: auto;\A 498:             @include scroll();\A 499:             margin-top: 0;\A 500:             padding: 43px 0 10px;\A 501:         }\A 502:         &__item {\A 503:             width: 270px;"; }

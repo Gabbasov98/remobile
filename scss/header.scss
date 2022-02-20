@@ -184,6 +184,12 @@
         &-mob {
             display: block;
             padding: 13px 0;
+            position: fixed;
+            background-color: #fff;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 10;
             &__inner {
                 display: flex;
                 align-items: center;

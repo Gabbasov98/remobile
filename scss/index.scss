@@ -496,7 +496,8 @@
             gap: unset;
             overflow-x: auto;
             @include scroll();
-            padding-bottom: 10px;
+            margin-top: 0;
+            padding: 43px 0 10px;
         }
         &__item {
             width: 270px;
@@ -639,7 +640,7 @@
             max-width: 250px;
         }
         &__items {
-            margin-top: 24px;
+            padding-top: 25px;
         }
         &__item {
             width: 205px;

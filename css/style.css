@@ -739,6 +739,12 @@ i {
   .header-mob {
     display: block;
     padding: 13px 0;
+    position: fixed;
+    background-color: #fff;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
   }
   .header-mob__inner {
     display: flex;
@@ -1430,7 +1436,8 @@ i {
     display: flex;
     gap: unset;
     overflow-x: auto;
-    padding-bottom: 10px;
+    margin-top: 0;
+    padding: 43px 0 10px;
   }
   .catalog__items::-webkit-scrollbar {
     width: 6px;
@@ -1578,7 +1585,7 @@ i {
     max-width: 250px;
   }
   .catalog__items {
-    margin-top: 24px;
+    padding-top: 25px;
   }
   .catalog__item {
     width: 205px;
@@ -2153,7 +2160,17 @@ i {
     left: 0;
     height: 220px;
     width: auto;
+    max-width: 320px;
   }
+}
+@media screen and (max-width: 992px) and (max-width: 350px) {
+  .about-service__img {
+    width: 100%;
+    height: auto;
+    max-height: 220px;
+  }
+}
+@media screen and (max-width: 992px) {
   .about-service__info {
     width: calc(100% + 40px);
     margin: 45px 0 0 -20px;
@@ -2407,6 +2424,11 @@ i {
   bottom: 0;
   transform: translate(-20px, 20px);
 }
+@media screen and (max-width: 992px) {
+  .repair__img:before {
+    transform: translate(-10px, 10px);
+  }
+}
 .repair__img img {
   width: 100%;
   position: relative;
@@ -2494,6 +2516,16 @@ i {
   padding: 45px;
   position: relative;
   border-radius: 19px;
+}
+.price-list__tie {
+  position: absolute;
+  top: -2px;
+  left: 10px;
+}
+@media screen and (max-width: 992px) {
+  .price-list__tie {
+    display: none;
+  }
 }
 .price-list__arrow {
   position: absolute;
@@ -2689,11 +2721,15 @@ i {
     padding-top: 0;
   }
 
+  .benefits .container {
+    padding-right: 0;
+  }
   .benefits__items {
     overflow-x: auto;
     display: flex;
     gap: unset;
-    padding-bottom: 10px;
+    padding: 40px 0 10px;
+    margin-top: 0;
   }
   .benefits__items::-webkit-scrollbar {
     width: 6px;
@@ -2864,6 +2900,7 @@ i {
   flex-direction: column;
   min-height: 100%;
   width: 100%;
+  overflow-x: hidden;
 }
 
 .content {
@@ -2910,6 +2947,10 @@ i {
   .container {
     width: 100%;
     padding: 0 20px;
+  }
+
+  body {
+    padding-top: 58px;
   }
 }
 @media screen and (max-width: 369px) {
