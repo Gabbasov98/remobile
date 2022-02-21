@@ -31,11 +31,15 @@
         display: flex;
         font-size: 16px;
         line-height: 159%;
+        &:hover {
+            color: #0345FF;
+        }
         &:not(:last-child) {
             margin-bottom: 5px;
         }
         &--address {
             max-width: 360px;
+            pointer-events: none;
         }
         i {
             flex-shrink: 0;
@@ -67,17 +71,35 @@
     .footer {
         padding: 35px 0 51px;
         &__inner {
-            display: block;
+            flex-wrap: wrap;
             position: relative;
         }
         &__col {
-            padding-top: 45px;
+            width: 50% !important;
+            &:nth-child(2) {
+                padding-top: 0;
+            }
         }
         &__text {
             position: absolute;
             bottom: -30px;
             margin-top: 0;
             left: 0;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .footer {
+        &__inner {
+            display: block;
+        }
+        &__col {
+            padding-top: 45px;
+            width: 100% !important;
+            &:nth-child(2) {
+                padding-top: 45px;
+            }
         }
     }
 }

@@ -22,10 +22,13 @@
   display: flex;
   font-size: 16px;
   line-height: 159%; }
+  .footer__link:hover {
+    color: #0345FF; }
   .footer__link:not(:last-child) {
     margin-bottom: 5px; }
   .footer__link--address {
-    max-width: 360px; }
+    max-width: 360px;
+    pointer-events: none; }
   .footer__link i {
     flex-shrink: 0;
     margin: 3px 14px 0 0;
@@ -43,14 +46,24 @@
   .footer {
     padding: 35px 0 51px; }
     .footer__inner {
-      display: block;
+      flex-wrap: wrap;
       position: relative; }
     .footer__col {
-      padding-top: 45px; }
+      width: 50% !important; }
+      .footer__col:nth-child(2) {
+        padding-top: 0; }
     .footer__text {
       position: absolute;
       bottom: -30px;
       margin-top: 0;
       left: 0; } }
+@media screen and (max-width: 768px) {
+  .footer__inner {
+    display: block; }
+  .footer__col {
+    padding-top: 45px;
+    width: 100% !important; }
+    .footer__col:nth-child(2) {
+      padding-top: 45px; } }
 
 /*# sourceMappingURL=footer.css.map */

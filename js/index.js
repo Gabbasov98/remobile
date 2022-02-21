@@ -15,9 +15,15 @@ $(document).ready(function() {
         $(".header__bg").removeClass("header__bg--active")
     })
 
+    wow = new WOW({
+        boxClass: 'wow',
+        animateClass: 'animated',
+        offset: 0,
+        mobile: false,
+        live: false
+    })
 
-
-
+    wow.init();
 
     $(".tab").click(function() {
         let path = $(this).attr("data-tab-path")
@@ -31,8 +37,25 @@ $(document).ready(function() {
         $(".tabs").removeClass("tabs--active")
     })
 
+    $(".header__link-show").click(function() {
+        if ($(this).parent(".header__link").hasClass("header__link--active")) {
+            $(this).parent(".header__link").removeClass("header__link--active")
+        } else {
+            $(".header__link-show").parent(".header__link").removeClass("header__link--active")
+            $(this).parent(".header__link").addClass("header__link--active")
+        }
+    })
 
+    $(document).mouseup(function(e) {
+        var div = $('.header__link-hidden');
+        if (!div.is(e.target) && div.has(e.target).length === 0) {
 
+            if (div.parent(".header__link").hasClass("header__link--active")) {
+                div.parent(".header__link").removeClass("header__link--active")
+            }
+
+        }
+    });
 
 })
 
